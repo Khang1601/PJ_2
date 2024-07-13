@@ -14,7 +14,7 @@ export default {
                 .toString(CryptoJS.enc.Utf8);
             return JSON.parse(decryptedData)
         } catch {
-            //console.log("key lỗi")
+            // console.log("key lỗi")
             return false
         }
     }

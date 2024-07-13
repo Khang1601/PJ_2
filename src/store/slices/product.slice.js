@@ -15,6 +15,9 @@ const productSlice = createSlice({
         deleteProduct: (state, action) => {
             return {
                 ...state,
+                //data là một phần của trạng thái (state) trong Redux, và có thể chứa một danh sách các sản phẩm hoặc dữ liệu khác
+                //product là biến tạm thời đại diện cho từng phần tử trong mảng state.data
+                //id của sản phẩm trùng với action.payload, sản phẩm đó sẽ bị loại bỏ khỏi mảng kết quả
                 data: state.data.filter(product => product.id !== action.payload)
             }
         },
@@ -24,23 +27,7 @@ const productSlice = createSlice({
                 data: [...state.data, action.payload]
             }
         },
-        // updateProduct: (state, action) => {
-        //     return state.map(product => {
-        //         if (product.id == action.payload.id) {
-        //             return action.payload
-        //         }
-        //         return product
-        //     })
-        // }
-        
-        // updateProduct: (state, action) => {
-           
-        //     const index = state.data.findIndex(product => product.id === action.payload.id);
 
-        //     if (index !== -1) {
-        //         state.data[index] = action.payload;
-        //     }
-        // }
 
     }
 })

@@ -9,7 +9,7 @@ export default function User() {
 
   return (
     <div className='user_page'>
-        <h2>User Manager</h2>
+        <h3>User Manager</h3>
         <UserList></UserList>
     </div>
   )

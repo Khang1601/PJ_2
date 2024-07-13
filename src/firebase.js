@@ -4,6 +4,7 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 //congif firebase
 const firebaseConfig = {
+
     apiKey: "AIzaSyBgPhGuxwU6blPWvnEY_bgpHb5105_S-Sc",
     authDomain: "testfirebase-d283a.firebaseapp.com",
     projectId: "testfirebase-d283a",

@@ -5,11 +5,11 @@ import { useSelector } from 'react-redux'
 
 export default function Product() {
     const productStore = useSelector(store => store.productStore)
-    console.log("productStore1111",productStore);
+    console.log("productStore ở product",productStore);
 
   return (
     <div className='product_page'>
-        <h2>Product Manager</h2>
+        <h3>Product Manager</h3>
         <ProductList productStore={productStore}></ProductList>
         
     </div>
